@@ -9,6 +9,7 @@ import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Subscribe from './components/Subscribe'
 import Footer from './components/Footer'
+import ContactUs from './components/ContactUs'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <FAQ />
       <Subscribe />
       <Footer />
+      <ContactUs />
     </>
   )
 }
