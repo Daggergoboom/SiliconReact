@@ -1387,7 +1387,6 @@ ul {
 /* FOOTER END */
 
 /* CONTACT US START */
-/* Contact Page - General Styling */
 .contact-page {
   padding: 4rem 2rem;
   background: linear-gradient(to bottom, #F3F6FF 50%, #FFFFFF 50%);
@@ -1413,7 +1412,6 @@ ul {
   margin-bottom: 3rem;
 }
 
-/* Contact Wrapper */
 .Contact-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1423,7 +1421,6 @@ ul {
   gap: 2rem;
 }
 
-/* Contact Cards */
 .contact-cards {
   display: flex;
   flex-direction: column;
@@ -1546,24 +1543,23 @@ ul {
   position: relative;
 }
 
-/* Icons styling */
 .icon {
-  width: 16px; /* Size of the icon */
+  width: 16px; 
   height: 16px;
-  margin-right: 0.75rem; /* Space between icon and text */
-  vertical-align: middle; /* Align icon with the middle of the text */
+  margin-right: 0.75rem; 
+  vertical-align: middle; 
 }
 
 .center p {
   display: flex;
-  align-items: center; /* Align icons and text horizontally */
-  margin: 0.5rem 0; /* Add spacing between rows */
+  align-items: center; 
+  margin: 0.5rem 0; 
   font-size: 14px;
-  color: #555; /* Adjust text color */
+  color: #555; 
 }
 
 .center strong {
-  font-weight: bold; /* Ensure strong elements stay bold */
+  font-weight: bold; 
 }
 
 .medical-centers .center {
@@ -1583,7 +1579,6 @@ ul {
   margin: 0.25rem 0;
 }
 
-/* Social Media Section */
 .social-media {
   display: flex;
   justify-content: flex-start;
