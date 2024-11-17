@@ -1434,7 +1434,6 @@ ul {
 .contact-card {
   padding: 1.5rem;
   border-radius: 8px;
-
 }
 
 .contact-card-headline {
@@ -1467,8 +1466,8 @@ ul {
   text-decoration: none;
   margin-top: 1rem;
   display: inline-block;
+  padding-left: 5rem;
 }
-
 
 .online-consultation-form {
   flex: 1.2;
@@ -1544,12 +1543,33 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
+}
+
+/* Icons styling */
+.icon {
+  width: 16px; /* Size of the icon */
+  height: 16px;
+  margin-right: 0.75rem; /* Space between icon and text */
+  vertical-align: middle; /* Align icon with the middle of the text */
+}
+
+.center p {
+  display: flex;
+  align-items: center; /* Align icons and text horizontally */
+  margin: 0.5rem 0; /* Add spacing between rows */
+  font-size: 14px;
+  color: #555; /* Adjust text color */
+}
+
+.center strong {
+  font-weight: bold; /* Ensure strong elements stay bold */
 }
 
 .medical-centers .center {
   background-color: #ffffff;
   padding: 1.5rem;
-
+  padding-left: 4rem;
 }
 
 .medical-centers .center h3 {
@@ -1563,20 +1583,24 @@ ul {
   margin: 0.25rem 0;
 }
 
-@media (max-width: 768px) {
-  .Contact-wrapper,
-  .map-and-centers {
-    flex-direction: column;
-  }
+/* Social Media Section */
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-left: 4rem;
+}
 
-  .contact-cards,
-  .online-consultation-form {
-    width: 100%;
-  }
+.social-media a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
 
-  .map-container img {
-    max-width: 100%;
-  }
+.social-media a img:hover {
+  transform: scale(1.2);
 }
 
 /* CONTACT US END  */
