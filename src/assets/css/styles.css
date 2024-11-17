@@ -333,6 +333,11 @@ ul {
     align-items: center;
   }
 
+  .main-menu .nav-link[href=""] {
+    font-weight: bold;
+    color: #000000; 
+  }
+
   .darkmode-toggle {
     position: absolute;
     right: 12rem;
@@ -1382,9 +1387,10 @@ ul {
 /* FOOTER END */
 
 /* CONTACT US START */
+/* Contact Page - General Styling */
 .contact-page {
   padding: 4rem 2rem;
-  background: linear-gradient(to right, #ffffff 50%, #f8faff 50%);
+  background: linear-gradient(to bottom, #F3F6FF 50%, #FFFFFF 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1399,15 +1405,6 @@ ul {
   text-align: center;
 }
 
-.breadcrumbs a {
-  text-decoration: none;
-  color: #6a5cff;
-}
-
-.breadcrumbs span {
-  color: #6c757d;
-}
-
 .page-title {
   font-size: 36px;
   font-weight: bold;
@@ -1416,124 +1413,103 @@ ul {
   margin-bottom: 3rem;
 }
 
-
+/* Contact Wrapper */
 .Contact-wrapper {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   max-width: 1200px;
   width: 100%;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
-
+/* Contact Cards */
 .contact-cards {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   flex: 1;
-  padding-right: 2rem;
-  box-sizing: border-box;
+}
+
+.contact-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+
 }
 
 .contact-card-headline {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
 .contact-card-headline .icon-container {
   flex-shrink: 0;
-  width: 3.5rem;
+  width: 4rem;
   height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #e0e7ff;
-}
-
-.contact-card-headline .icon-container img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.contact-card-headline .text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .contact-card-headline .text-container h3 {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
-  color: #222;
-}
-
-.contact-card-headline .text-container p {
-  font-size: 16px;
-  color: #555;
-  margin: 0;
 }
 
 .contact-link {
-  font-size: 16px;
   color: #6a5cff;
   font-weight: bold;
   text-decoration: none;
   margin-top: 1rem;
-  align-self: flex-start;
   display: inline-block;
-  transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-  color: #4f4fc4; 
 }
 
 
 .online-consultation-form {
-  flex: 1.2; 
-  padding-left: 2rem;
-  box-sizing: border-box;
+  flex: 1.2;
+  background-color: #ffffff;
+  padding: 3rem; 
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  min-height: 700px; 
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
 .online-consultation-form h2 {
   font-size: 28px;
   font-weight: bold;
-  color: #222;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-
-.online-consultation-form .form-container {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08); /* Added subtle shadow */
-}
-
-
-.online-consultation-form .form-container form {
+.online-consultation-form form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem; 
+  flex-grow: 1; 
 }
 
 .online-consultation-form input,
 .online-consultation-form select {
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem; 
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
 .online-consultation-form button {
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #6a5cff;
+  margin-top: 8rem;
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
@@ -1544,9 +1520,8 @@ ul {
 }
 
 .online-consultation-form button:hover {
-  background-color: #4f4fc4; 
+  background-color: #4f4fc4;
 }
-
 
 .map-and-centers {
   display: flex;
@@ -1555,6 +1530,7 @@ ul {
   justify-content: space-between;
   max-width: 1200px;
   width: 100%;
+  margin-top: 3rem;
 }
 
 .map-container img {
@@ -1573,23 +1549,19 @@ ul {
 .medical-centers .center {
   background-color: #ffffff;
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+
 }
 
 .medical-centers .center h3 {
-  margin-bottom: 0.5rem;
   font-size: 18px;
   font-weight: bold;
-  color: #222;
+  margin-bottom: 0.5rem;
 }
 
 .medical-centers .center p {
-  font-size: 16px;
-  color: #555;
+  font-size: 14px;
   margin: 0.25rem 0;
 }
-
 
 @media (max-width: 768px) {
   .Contact-wrapper,
@@ -1600,15 +1572,6 @@ ul {
   .contact-cards,
   .online-consultation-form {
     width: 100%;
-    padding: 0;
-  }
-
-  .contact-page {
-    background: #f8faff;
-  }
-
-  .online-consultation-form .form-container {
-    padding: 1.5rem;
   }
 
   .map-container img {

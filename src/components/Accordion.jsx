@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Accordion = ({ item }) => {
-  const [isOpen, setIsOpen] = useState(false); // Track open/closed state
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={`faq ${isOpen ? 'active' : ''}`}>

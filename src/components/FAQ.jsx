@@ -6,7 +6,6 @@ import Accordion from './Accordion';
 const FAQ = () => {
   const [accordions, setAccordions] = useState([]);
 
-  // Fetch FAQ data from API
   const fetchAccordions = async () => {
     const res = await fetch(
       'https://win24-assignment.azurewebsites.net/api/faq'
@@ -28,14 +27,12 @@ const FAQ = () => {
         </p>
       </div>
 
-      {/* FAQ Accordion Container */}
       <div className="faq-accordion">
         {accordions.map((item) => (
           <Accordion key={item.id} item={item} />
         ))}
       </div>
 
-      {/* Contact Options */}
       <div className="contact-container s14">
         <button className="contact-card">
           <img src={PhoneIcon} alt="Phone Icon" />
@@ -54,7 +51,6 @@ const FAQ = () => {
         </button>
       </div>
 
-      {/* Final Contact Button */}
       <div className="contact">
         <div className="container">
           <button className="btn btn-primary">

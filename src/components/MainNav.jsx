@@ -66,6 +66,11 @@ const MainNav = () => {
             </a>
           </li>
           <li>
+  <a href="#contact" className="nav-link">
+    Contact
+  </a>
+</li>
+          <li>
             <a href="#" className="btn btn-primary">
               <img src={User} alt="Sign-up" />
               <span>Sign in / up</span>
